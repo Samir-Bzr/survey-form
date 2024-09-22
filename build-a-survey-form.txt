@@ -1,0 +1,174 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the form below to provide your feedback.</p>
+    
+    <form id="survey-form">
+      <!-- Name Field -->
+      <div class="form-group">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      
+      <!-- Email Field -->
+      <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      
+      <!-- Age Field -->
+      <div class="form-group">
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="number" min="18" max="100" placeholder="Enter your age" required>
+      </div>
+      
+      <!-- Dropdown Field -->
+      <div class="form-group">
+        <label for="dropdown">How did you hear about us?</label>
+        <select id="dropdown" name="source">
+          <option value="internet">Internet</option>
+          <option value="friend">Friend</option>
+          <option value="advertisement">Advertisement</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+      <!-- Radio Buttons Field -->
+      <div class="form-group">
+        <label>Would you recommend us to a friend?</label>
+        <label>
+          <input type="radio" name="recommend" value="yes" checked> Yes
+        </label>
+        <label>
+          <input type="radio" name="recommend" value="no"> No
+        </label>
+      </div>
+      
+      <!-- Checkboxes Field -->
+      <div class="form-group">
+        <label>What topics are you interested in?</label>
+        <label>
+          <input type="checkbox" name="topics" value="technology"> Technology
+        </label>
+        <label>
+          <input type="checkbox" name="topics" value="design"> Design
+        </label>
+        <label>
+          <input type="checkbox" name="topics" value="marketing"> Marketing
+        </label>
+      </div>
+      
+      <!-- Comments Field -->
+      <div class="form-group">
+        <label for="comments">Any additional comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Your comments here..."></textarea>
+      </div>
+      
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+** end of undefined **
+
+** start of undefined **
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  color: #666;
+}
+
+/* Form Styling */
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+
+** end of undefined **
+
